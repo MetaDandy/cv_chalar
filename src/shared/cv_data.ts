@@ -1,104 +1,97 @@
 export const personalInfo = {
-  name: "Joseph Benitez Arroyo",
-  summary: "Estudiante de Ingeniería en Sistemas (9no semestre) con experiencia profesional como desarrollador Full Stack. Especializado en Go, React, y NestJS, con enfoque en arquitecturas escalables, orquestación de microservicios y desarrollo backend orientado a eventos.",
-  role: "Full Stack Developer | Go & React Specialist",
-  email: "benitezarroyojoseph@gmail.com",
-  phone: "+591 65933751",
-  location: "Santa Cruz, Bolivia",
-  github: "https://github.com/MetaDandy"
+  name: "David Arturo Chalar Quiroz",
+  summary: "Ingeniero en Sistemas con experiencia en desarrollo Full Stack, automatización de procesos SAP y consultoría técnica. Especializado en Laravel, React, NestJS y tecnologías SAP (Build Apps, BTP, S4/HANA). Comprometido con la excelencia técnica y la innovación en soluciones empresariales.",
+  role: "Full Stack Developer | SAP Tech Consultant",
+  email: "davidchalarq@gmail.com",
+  phone: "+591 76078873",
+  location: "Santa Cruz de la Sierra, Bolivia",
+  github: "https://github.com/dabidsillo"
 };
 
 export const experiences = [
   {
-    company: "Eicap",
-    role: "Desarrollador Full Stack",
+    company: "DATEC LTDA",
+    role: "SAP Tech Consultant - Administration & Support",
     period: "Julio 2025 - Actualidad",
-    description: "Participación en la planificación, arquitectura y desarrollo de una aplicación de escritorio contable construida con Wails (Go + React).",
+    description: "Diseño y desarrollo de flujos de automatización SAP y soporte técnico a usuarios.",
     responsibilities: [
-      "Diseño y desarrollo de módulos clave como cotizaciones, libro mayor y balance general.",
-      "Implementación de servidor de autenticación independiente mediante sistema de keys/licenciamiento.",
-      "Migración de modelo de datos y DTOs para compatibilidad tipada entre Go y React.",
-      "Diseño e implementación del módulo de Inventarios."
+      "Diseño y desarrollo de flujos de automatización de SAP Build Apps.",
+      "Creación de formularios y bots para digitalización de procesos internos mediante BTP.",
+      "Integración con módulos de SAP (S4/HANA Public Edition) mediante APIs de SAP Hub.",
+      "Soporte de usuario de las tecnologías SAP SuccessFactor, S4/HANA Private Cloud y Fiori."
     ],
-    technologies: ["Go", "Wails", "React", "TypeScript", "Tailwind CSS", "SQLite"]
+    technologies: ["SAP Build Apps", "SAP BTP", "S4/HANA", "SAP APIs", "JavaScript", "XML"]
   },
   {
-    company: "Multicenter",
-    role: "Desarrollador Frontend",
-    period: "Octubre 2025 - Febrero 2026",
-    description: "Desarrollo de un sistema POS web orientado a la gestión de ventas en sucursales físicas.",
+    company: "MADISA SA",
+    role: "Pasantía de Desarrollador Full-Stack",
+    period: "Abril 2025 - Junio 2025",
+    description: "Desarrollo de sistema web de gestión de flota de camiones.",
     responsibilities: [
-      "Desarrollo y mantenimiento del frontend utilizando React + TypeScript.",
-      "Implementación de manejo de estado global con Zustand.",
-      "Integración con APIs REST protegidas mediante JWT.",
-      "Integración con dispositivos externos (impresoras térmicas, lectores de barras)."
+      "Desarrollo de sistema web de gestión de flota de camiones utilizando Laravel y SQL Server.",
+      "Registro y seguimiento del estado del camión, carga, combustible y mantenimiento.",
+      "Gestión individualizada de cada camión y su conductor asignado dentro del sistema.",
+      "Módulos de control operativo para digitalizar y centralizar los procesos logísticos."
     ],
-    technologies: ["React", "TypeScript", "Zustand", "Tailwind CSS", "shadcn/ui"]
+    technologies: ["Laravel", "PHP", "SQL Server", "AdminLTE", "JavaScript", "MySQL"]
   },
   {
-    company: "Wabi",
-    role: "Consultor en Desarrollo",
-    period: "Julio - Octubre 2025",
-    description: "Reestructuración e implementación de múltiples módulos del ecosistema Wabi y Customer Hub.",
+    company: "Universidad Autónoma Gabriel René Moreno",
+    role: "Auxiliar de Laboratorio de Cómputo",
+    period: "Marzo 2024 - Noviembre 2024",
+    description: "Mantenimiento y soporte técnico de infraestructura de cómputo.",
     responsibilities: [
-      "Diseño e implementación del módulo Customer Hub utilizando NestJS con Sequelize.",
-      "Desarrollo de servicios para administración de clientes, billeteras y bancos.",
-      "Implementación y mantenimiento de Lambda Payments para métodos de pago (QR, tarjeta, transferencia).",
-      "Aseguramiento de integración Core-Workers y estandarización de APIs REST."
+      "Mantenimiento correctivo/preventivo a computadoras.",
+      "Limpieza y atención de salas de cómputo.",
+      "Instalación y configuración de programas académicos."
     ],
-    technologies: ["NestJS", "Node.js", "Sequelize", "AWS Lambdas", "PostgreSQL", "TypeScript"]
-  },
-  {
-    company: "Dyra Travel",
-    role: "Desarrollador Full Stack (Freelance)",
-    period: "Enero - Julio 2025",
-    description: "Implementación de sistemas de scraping y gestión de paquetes turísticos.",
-    responsibilities: [
-      "Sistema de web scraping con Puppeteer para extracción de datos.",
-      "Desarrollo de endpoints en Node.js para gestión de paquetes.",
-      "Mejora de widget en Zoho CRM para tracking de clientes."
-    ],
-    technologies: ["React", "Node.js", "Puppeteer", "Zoho CRM"]
+    technologies: ["Hardware", "GNU/Linux", "Windows", "Troubleshooting"]
   }
 ];
 
 export const projects = [
   {
-    title: "Cuent AI Core",
-    description: "Plataforma de Generación de Contenido con IA (Proyecto Universitario). Generación de audio/video con IA.",
-    highlights: ["Integración Google Gemini & ElevenLabs", "Procesamiento con FFmpeg", "Arquitectura Dockerizada"],
-    technologies: ["Go", "Fiber", "Google Gemini API", "ElevenLabs API", "Supabase", "FFmpeg", "WebSockets", "Docker"]
+    title: "GenUI",
+    description: "Generador visual de componentes frontend para Angular (Proyecto Universitario). Editor gráfico drag & drop con exportación de código.",
+    highlights: ["Editor gráfico drag & drop", "Exportación a código Angular", "Interfaz React + Vite"],
+    technologies: ["React", "Vite", "JavaScript", "GrapesJS", "Angular", "CSS"]
   },
   {
-    title: "E-commerce Autorepuestos",
-    description: "Backend para gestión de inventario de autorepuestos.",
-    highlights: ["Screaming Architecture", "Real-time updates", "Auth system"],
-    technologies: ["NestJS", "TypeScript", "Supabase", "PostgreSQL", "Next.js"]
-  },
-  {
-    title: "MaquetAngular",
-    description: "Demostración de versatilidad en diferentes frameworks frontend.",
-    highlights: ["Frontend Angular", "Backend Go"],
-    technologies: ["Angular", "TypeScript", "Go"]
+    title: "TransiTrack",
+    description: "Sistema web para gestión y seguimiento de flota de camiones por conductor y ruta.",
+    highlights: ["Registro de salida/llegada con estado del vehículo", "Control de combustible y mantenimiento", "Panel administrativo de monitoreo"],
+    technologies: ["Laravel", "PHP", "AdminLTE", "SQL Server", "HTML", "CSS", "JavaScript"]
   }
 ];
 
 export const education = [
   {
-    degree: "Ingeniería en Sistemas",
+    degree: "Lic. en Ingeniería en Sistemas",
     institution: "Universidad Autónoma Gabriel René Moreno",
-    period: "2021 - 2026 (9no semestre)"
+    period: "Febrero 2021 - Noviembre 2025"
+  },
+  {
+    degree: "Dip. en DevSecOps Essentials",
+    institution: "Universidad Autónoma Gabriel René Moreno",
+    period: "Mayo 2026 - Actualidad"
+  },
+  {
+    degree: "Dip. en Valores e Identidad Educativa Marista",
+    institution: "Universidad Católica Boliviana 'San Pablo'",
+    period: "Marzo 2026 - Actualidad"
   }
 ];
 
 export const skills = {
-  languages: ["Go", "TypeScript", "JavaScript", "SQL", "Bash"],
-  frameworks: ["Fiber", "NestJS", "React", "Next.js", "Angular", "Express"],
-  databases: ["PostgreSQL", "SQLite", "MongoDB", "Supabase"],
-  tools: ["Docker", "Docker Compose", "Git", "AWS Lambdas", "Puppeteer", "FFmpeg", "Linux (Arch)"]
+  languages: ["JavaScript", "TypeScript", "Python", "PHP", "SQL", "Bash"],
+  frameworks: ["NestJS", "Express", "React", "Next.js", "Django", "FastAPI", "Laravel"],
+  databases: ["PostgreSQL", "MySQL", "SQLite", "MariaDB", "SQL Server"],
+  tools: ["Docker", "Git", "Microsoft Office", "Google Workspace", "GNU/Linux", "SAP Build Apps", "SAP BTP"]
 };
 
 export const languages = [
   { language: "Español", level: "Nativo" },
-  { language: "Inglés", level: "Intermedio (Técnico)" }
+  { language: "Inglés", level: "Escrito: Intermedio, Hablado: Básico" }
 ];
+
+export const values = ["Receptivo", "Proactivo", "Puntual", "Respetuoso", "Responsable"];

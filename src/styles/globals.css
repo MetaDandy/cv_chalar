@@ -1,7 +1,109 @@
 @import "tailwindcss";
 
 @plugin "daisyui" {
-  themes: emerald, halloween;
+  themes: one-light-pro, one-dark-pro-night-flat;
+}
+
+/* ============================================================
+   ONE LIGHT PRO — modo claro
+   Basado en el tema One Light de Atom
+   ============================================================ */
+@plugin "daisyui/theme" {
+  name: "one-light-pro";
+  default: true;
+  prefersdark: false;
+  color-scheme: light;
+
+  --color-base-100: oklch(98.48% 0 0);           /* #fafafa - editor bg */
+  --color-base-200: oklch(95.35% 0.0013 286.38); /* #f0f0f1 - panels */
+  --color-base-300: oklch(91.24% 0.0025 286.38); /* #e5e5e6 - borders */
+  --color-base-content: oklch(29.23% 0.0162 269.26); /* #383a42 - foreground */
+
+  --color-primary: oklch(61.47% 0.2008 262.9);      /* #4078f2 - blue */
+  --color-primary-content: oklch(98.48% 0 0);       /* #fafafa */
+
+  --color-secondary: oklch(45.21% 0.2186 328.82);   /* #a626a4 - purple */
+  --color-secondary-content: oklch(98.48% 0 0);
+
+  --color-accent: oklch(63.11% 0.1732 142.5);       /* #50a14f - green */
+  --color-accent-content: oklch(98.48% 0 0);
+
+  --color-neutral: oklch(48.94% 0.0197 269.26);     /* #696c77 - mono-2 */
+  --color-neutral-content: oklch(98.48% 0 0);
+
+  --color-info: oklch(59.09% 0.1446 234.57);        /* #0184bc - cyan */
+  --color-info-content: oklch(98.48% 0 0);
+
+  --color-success: oklch(63.11% 0.1732 142.5);      /* #50a14f - green */
+  --color-success-content: oklch(98.48% 0 0);
+
+  --color-warning: oklch(63.87% 0.1358 75.66);      /* #c18401 - yellow */
+  --color-warning-content: oklch(98.48% 0 0);
+
+  --color-error: oklch(63.98% 0.2078 29.23);        /* #e45649 - red */
+  --color-error-content: oklch(98.48% 0 0);
+
+  --radius-selector: 0.5rem;
+  --radius-field: 0.375rem;
+  --radius-box: 0.5rem;
+
+  --size-selector: 0.25rem;
+  --size-field: 0.25rem;
+
+  --border: 1px;
+  --depth: 0;
+  --noise: 0;
+}
+
+/* ============================================================
+   ONE DARK PRO NIGHT FLAT — modo oscuro
+   Basado en OneDark-Pro-night-flat.json
+   ============================================================ */
+@plugin "daisyui/theme" {
+  name: "one-dark-pro-night-flat";
+  default: false;
+  prefersdark: true;
+  color-scheme: dark;
+
+  --color-base-100: oklch(19.66% 0.0085 264.08);    /* #181a1f - editor bg */
+  --color-base-200: oklch(18.29% 0.0095 264.08);    /* #16191d - tabs bg */
+  --color-base-300: oklch(22.75% 0.0095 264.08);    /* #1e2227 - hover */
+  --color-base-content: oklch(75.35% 0.0232 264.08); /* #abb2bf - foreground */
+
+  --color-primary: oklch(72.73% 0.1407 245.3);      /* #61afef - blue */
+  --color-primary-content: oklch(19.66% 0.0085 264.08);
+
+  --color-secondary: oklch(66.97% 0.1739 316.03);   /* #c678dd - purple */
+  --color-secondary-content: oklch(19.66% 0.0085 264.08);
+
+  --color-accent: oklch(77.44% 0.1436 131.82);      /* #98c379 - green */
+  --color-accent-content: oklch(19.66% 0.0085 264.08);
+
+  --color-neutral: oklch(44.45% 0.0187 264.08);     /* #5c6370 - gutter */
+  --color-neutral-content: oklch(75.35% 0.0232 264.08);
+
+  --color-info: oklch(72.28% 0.0972 200.42);        /* #56b6c2 - cyan */
+  --color-info-content: oklch(19.66% 0.0085 264.08);
+
+  --color-success: oklch(77.44% 0.1436 131.82);     /* #98c379 - green */
+  --color-success-content: oklch(19.66% 0.0085 264.08);
+
+  --color-warning: oklch(82.57% 0.1198 86.34);      /* #e5c07b - yellow */
+  --color-warning-content: oklch(19.66% 0.0085 264.08);
+
+  --color-error: oklch(69.89% 0.1514 19.66);        /* #e06c75 - red */
+  --color-error-content: oklch(19.66% 0.0085 264.08);
+
+  --radius-selector: 0.5rem;
+  --radius-field: 0.375rem;
+  --radius-box: 0.5rem;
+
+  --size-selector: 0.25rem;
+  --size-field: 0.25rem;
+
+  --border: 1px;
+  --depth: 0;
+  --noise: 0;
 }
 
 
